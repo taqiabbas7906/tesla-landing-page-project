@@ -3,16 +3,18 @@ export default {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
-      colors: {
-        accent: {
-          400: "#E51837",
-          300: "#BEBEBE",
-        },
-        primary: {
-          800: "#212121",
+      backgroundImage: {
+        heroSection: "url(./images/Background.jpg)",
+      },
+      container: {
+        center: true,
+        screens: {
+          sm: "90vw",
+          md: "820px",
+          lg: "1080px",
+          xl: "1180px",
         },
       },
-
       colors: {
         accent: {
           100: "#BEBEBE",
@@ -32,12 +34,6 @@ export default {
       fontFamily: {
         primary: ["Montserrat", "sans-serif"],
         accent: ["gotham", "sans-serif"],
-      },
-      fontWeight: {
-        regular: 400,
-        medium: 500,
-        semibold: 600,
-        bold: 700,
       },
       fontSize: {
         200: "0.5rem",

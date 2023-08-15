@@ -1,3 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: gotham;
+  src: url("./fonts/gotham.ttf");
+}
+.nav {
+  @apply flex md:w-[30%] md:justify-evenly md:flex-row flex-col w-[50vw] md:h-auto;
+}
+.borderNavLink {
+  @apply md:border-b-[3px] md:border-l-0 border-transparent border-l-[3px] items-center hover:border-accent-300 transition-colors duration-200 ease-in-out;
+}
+.navLink {
+  @apply flex items-center text-accent-100 font-primary text-400 font-semibold md:pl-0 pl-3 md:mb-0 md:h-[3.7rem] h-[3.75rem];
+}
+.active {
+  @apply border-accent-300;
+}
+section {
+  @apply w-[100vw] md:h-[100vh] bg-primary-300 flex items-center justify-center;
+}
