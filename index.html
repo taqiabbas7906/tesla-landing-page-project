@@ -61,10 +61,11 @@
       <!-- Hero Section Start -->
       <section class="bg-heroSection bg-cover bg-no-repeat bg-center" id="home">
         <div class="imgFilter | bg-primary-200 w-full h-full">
-          <div class="container h-[100%] flex flex-col">
+          <div class="container h-[100%] flex flex-col justify-center">
             <span
               class="font-primary flex-col md:flex-row text-700 font-bold text-neutral-100 tracking-[2.4px] md:tracking-[4.4px] lg:text-900 xl:text-1000 text-center mainHeading flex items-center justify-center"
-              ><h1 class="whitespace-nowrap">Drive the future</h1>
+            >
+              <h1 class="whitespace-nowrap">Drive the future</h1>
               <span class="flex items-center md:ml-4"
                 >with<img
                   class="h-[24px] ml-4 lg:h-[30px] xl:h-[35px]"
@@ -73,12 +74,48 @@
               /></span>
             </span>
             <a href="#cars" class="group block self-center"
-              ><button
-                class="btn | font-primary font-normal text-300 h-[36px] w-[100px] md:text-500 text-neutral-100 md:w-[10.5rem] md:h-[4rem] border-2 border-accent-300 rounded-full group-hover:border-transparent group-hover:bg-accent-300 transition-colors duration-200"
-              >
-                See More
-              </button></a
+              ><button class="btn | mt-2 md:mt-5">See More</button></a
             >
+            <div
+              class="featuresList | flex justify-self-end text-neutral-100 md:text-500 font-semibold text-400 justify-center items-center flex-col md:flex-row"
+            >
+              <div class="featuresTop | flex">
+                <div class="feature">
+                  <div class="featureText |">Full Self Driving Mode</div>
+                  <img
+                    src="images/steering.svg"
+                    alt="steering wheel"
+                    class="featureImg"
+                  />
+                </div>
+                <div class="feature">
+                  <div class="featureText">Fully Electric Technology</div>
+                  <img
+                    src="images/electricity.png"
+                    alt="electric"
+                    class="featureImg"
+                  />
+                </div>
+              </div>
+              <div class="featuresBottom | flex">
+                <div class="feature">
+                  <div class="featureText"><b>NHTSA</b> Rating 5 Out of 5</div>
+                  <img
+                    src="images/5 stars.svg"
+                    alt="5 stars"
+                    class="featureImg"
+                  />
+                </div>
+                <div class="feature md:border-r-0">
+                  <div class="featureText">Super Fast Charging</div>
+                  <img
+                    src="images/charging.svg"
+                    alt="charging"
+                    class="featureImg"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
