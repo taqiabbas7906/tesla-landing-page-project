@@ -21,17 +21,41 @@
   @apply border-accent-300;
 }
 section {
-  @apply w-[100vw] md:h-[100vh] bg-primary-300 flex items-center justify-center;
+  @apply w-[100vw] bg-primary-300 flex items-center justify-center;
 }
 .btn {
-  @apply font-primary font-normal text-300 h-[38px] w-[100px] md:text-500 text-neutral-100 md:w-[175px] md:h-[4rem] border-2 border-accent-300 rounded-full group-hover:border-transparent group-hover:bg-accent-300 transition-colors duration-200;
+  @apply font-primary font-normal text-300 h-[38px] w-[100px] md:text-500 text-neutral-100 md:w-[175px] md:h-[4rem] border-2 border-accent-300 rounded-full group-hover:border-transparent group-hover:bg-accent-300 transition-colors duration-200 hover:bg-accent-300;
+}
+.btn.small {
+  @apply md:w-[128px] md:h-[45px] md:text-400 w-[80px] h-[35px] text-300;
 }
 .feature {
-  @apply flex items-center md:h-auto h-[80px] justify-between w-[145px] lg:w-[225px] md:w-[180px] [&:nth-child(even)]:border-l-[1px] md:border-r-2 md:[&:nth-child(even)]:border-l-0 border-neutral-100 mr-5 mt-5 md:mt-0;
+  @apply flex items-center md:h-auto h-[75px] justify-between w-[155px] lg:w-[255px] md:w-[180px] [&:nth-child(even)]:border-l-[1px] md:border-r-[1px] md:[&:nth-child(even)]:border-l-0 border-neutral-100 mr-5 mt-5 md:mt-0;
 }
 .featureText {
-  @apply w-[65px] md:w-[100px] ml-3;
+  @apply w-[95px] md:w-[100px] ml-3 font-primary;
 }
 .featureImg {
-  @apply h-[45px] md:h-auto;
+  @apply h-[55px] md:h-auto mr-3;
+}
+.model {
+  @apply md:w-[25%] ml-10 md:ml-0 flex md:block h-[170px] md:border-l-[1px] border-b-[1px] md:border-b-transparent md:h-[100%];
+}
+.modelName {
+  @apply text-700 md:text-1100 mr-10 md:mr-0 font-accent md:text-center text-center flex md:block items-center text-neutral-100 group-hover:text-accent-300 transition-colors duration-500;
+}
+.modelInfo {
+  @apply flex md:h-[500px] w-full flex-col items-center justify-end pb-3 md:pb-10 bg-no-repeat bg-cover;
+}
+.modelPrice {
+  @apply md:text-400 text-300 text-neutral-100 font-primary;
+}
+.imgFilter.card {
+  @apply group-hover:opacity-0 transition-all duration-500;
+}
+.infoHeading {
+  @apply md:text-900 text-500 font-primary font-bold text-neutral-100;
+}
+.infoText {
+  @apply md:text-500 text-400 font-primary;
 }

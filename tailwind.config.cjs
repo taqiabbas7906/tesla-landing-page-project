@@ -5,6 +5,10 @@ export default {
     extend: {
       backgroundImage: {
         heroSection: "url(./images/Background.jpg)",
+        S: "url(./images/Model S.svg)",
+        3: "url(./images/Model 3.svg)",
+        X: "url(./images/Model X.svg)",
+        Y: "url(./images/Model Y.svg)",
       },
       container: {
         center: true,

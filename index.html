@@ -59,9 +59,12 @@
     <!-- Header End -->
     <main>
       <!-- Hero Section Start -->
-      <section class="bg-heroSection bg-cover bg-no-repeat bg-center" id="home">
+      <section
+        class="bg-heroSection h-[35rem] md:h-[100vh] bg-cover bg-no-repeat bg-center"
+        id="home"
+      >
         <div class="imgFilter | bg-primary-200 w-full h-full">
-          <div class="container h-[100%] flex flex-col justify-center">
+          <div class="container relative h-[100%] flex flex-col justify-center">
             <span
               class="font-primary flex-col md:flex-row text-700 font-bold text-neutral-100 tracking-[2.4px] md:tracking-[4.4px] lg:text-900 xl:text-1000 text-center mainHeading flex items-center justify-center"
             >
@@ -77,7 +80,7 @@
               ><button class="btn | mt-2 md:mt-5">See More</button></a
             >
             <div
-              class="featuresList | flex justify-self-end text-neutral-100 md:text-500 font-semibold text-400 justify-center items-center flex-col md:flex-row"
+              class="featuresList | bottom-1 left-[50%] translate-x-[-50%] absolute flex justify-self-end text-neutral-100 md:text-500 font-semibold text-[.9rem] justify-center items-center flex-col md:flex-row"
             >
               <div class="featuresTop | flex">
                 <div class="feature">
@@ -120,8 +123,118 @@
         </div>
       </section>
       <!-- Hero Section End -->
-      <section id="cars">Cars</section>
-      <section id="features"></section>
+      <section
+        class="bg-primary-300 justify-evenly md:h-[100vh] flex-col"
+        id="cars"
+      >
+        <h2
+          class="text-700 md:text-1100 mt-3 font-accent uppercase font-semibold mb-10 text-neutral-100"
+        >
+          Models
+        </h2>
+        <div class="carsContainer w-[100vw] flex flex-col md:flex-row">
+          <div class="model group border-l-transparent">
+            <h3 class="modelName">S</h3>
+            <div class="modelInfo bg-S bg-center relative">
+              <div class="modelPrice z-10 relative">87,490/Dollars</div>
+              <button
+                class="btn small | z-10 relative mt-2 md:mt-5 self-center"
+              >
+                See More
+              </button>
+              <div
+                class="imgFilter card | z-[1] bg-primary-200 w-full h-full absolute bottom-0"
+              ></div>
+            </div>
+          </div>
+          <div class="model group">
+            <h3 class="modelName">3</h3>
+            <div class="modelInfo bg-3 bg-center relative">
+              <div
+                class="imgFilter card | bg-primary-200 w-full h-full absolute bottom-0"
+              ></div>
+              <div class="modelPrice z-10 relative">42,990/Dollars</div>
+              <button
+                class="btn small | z-10 relative mt-2 md:mt-5 self-center"
+              >
+                See More
+              </button>
+            </div>
+          </div>
+          <div class="model group">
+            <h3 class="modelName">X</h3>
+            <div class="modelInfo bg-X bg-center relative">
+              <div class="modelPrice z-10 relative">99,990/Dollars</div>
+              <button
+                class="btn small | z-10 relative mt-2 md:mt-5 self-center"
+              >
+                See More
+              </button>
+              <div
+                class="imgFilter card | bg-primary-200 w-full h-full absolute bottom-0"
+              ></div>
+            </div>
+          </div>
+          <div class="model group border-b-transparent">
+            <h3 class="modelName">Y</h3>
+            <div class="modelInfo bg-Y bg-center relative">
+              <div class="modelPrice z-10 relative">53,990/Dollars</div>
+              <button
+                class="btn small | z-10 relative mt-2 md:mt-5 self-center"
+              >
+                See More
+              </button>
+              <div
+                class="imgFilter card | bg-primary-200 w-full h-full absolute bottom-0"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="" id="features">
+        <article>
+          <img src="images/FSD img.svg" alt="Fully Self Driving" />
+          <div class="featuresInfo">
+            <h3 class="infoHeading">Full Self Driving</h3>
+            <p class="infoText">
+              Tesla's self-driving technology, known as Autopilot, allows the
+              car to navigate on its own, changing lanes, braking, and
+              accelerating as necessary. While it is not fully autonomous, it
+              represents a significant step forward in the development of
+              self-driving cars, and Tesla continues to improve its
+              capabilities.
+            </p>
+          </div>
+        </article>
+        <article>
+          <img src="images/Fully Electric img.svg" alt="Tesla Battery" />
+          <div class="featuresInfo">
+            <h3 class="infoHeading">Full Self Driving</h3>
+            <p class="infoText">
+              Tesla's self-driving technology, known as Autopilot, allows the
+              car to navigate on its own, changing lanes, braking, and
+              accelerating as necessary. While it is not fully autonomous, it
+              represents a significant step forward in the development of
+              self-driving cars, and Tesla continues to improve its
+              capabilities.
+            </p>
+          </div>
+        </article>
+        <article>
+          <img src="images/Fast Charging img.svg" alt="Tesla Charger" />
+          <div class="featuresInfo">
+            <h3 class="infoHeading">Full Self Driving</h3>
+            <p class="infoText">
+              Tesla's self-driving technology, known as Autopilot, allows the
+              car to navigate on its own, changing lanes, braking, and
+              accelerating as necessary. While it is not fully autonomous, it
+              represents a significant step forward in the development of
+              self-driving cars, and Tesla continues to improve its
+              capabilities.
+            </p>
+          </div>
+        </article>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
