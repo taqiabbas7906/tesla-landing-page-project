@@ -59,3 +59,9 @@ section {
 .infoText {
   @apply md:text-500 text-400 font-primary;
 }
+.detailFeature {
+  @apply absolute lg:static top-0 lg:h-[470px];
+}
+.detailFeature .container {
+  @apply flex flex-col lg:flex-row w-[100%] justify-between;
+}

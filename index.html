@@ -10,7 +10,7 @@
   <body class="w-[100vw] overflow-x-hidden">
     <!-- Header Start -->
     <header
-      class="header | w-[100vw] flex bg-primary-100 h-[3.75rem] items-center fixed z-50"
+      class="header | w-[100vw] flex bg-primary-200 h-[3.75rem] items-center fixed z-50"
     >
       <div class="container">
         <nav
@@ -57,7 +57,7 @@
       </div>
     </header>
     <!-- Header End -->
-    <main>
+    <main class="overflow-x-hidden">
       <!-- Hero Section Start -->
       <section
         class="bg-heroSection h-[35rem] md:h-[100vh] bg-cover bg-no-repeat bg-center"
@@ -124,7 +124,7 @@
       </section>
       <!-- Hero Section End -->
       <section
-        class="bg-primary-300 justify-evenly md:h-[100vh] flex-col"
+        class="bg-primary-300 justify-between md:h-[100vh] flex-col"
         id="cars"
       >
         <h2
@@ -191,47 +191,56 @@
           </div>
         </div>
       </section>
-      <section class="" id="features">
-        <article>
-          <img src="images/FSD img.svg" alt="Fully Self Driving" />
-          <div class="featuresInfo">
-            <h3 class="infoHeading">Full Self Driving</h3>
-            <p class="infoText">
-              Tesla's self-driving technology, known as Autopilot, allows the
-              car to navigate on its own, changing lanes, braking, and
-              accelerating as necessary. While it is not fully autonomous, it
-              represents a significant step forward in the development of
-              self-driving cars, and Tesla continues to improve its
-              capabilities.
-            </p>
+      <section
+        class="flex lg:flex-col relative sm:overflow-x-hidden"
+        id="features"
+      >
+        <article class="detailFeature">
+          <div class="container">
+            <img src="images/FSD img.svg" alt="Fully Self Driving" />
+            <div class="featuresInfo">
+              <h3 class="infoHeading">Full Self Driving</h3>
+              <p class="infoText">
+                Tesla's self-driving technology, known as Autopilot, allows the
+                car to navigate on its own, changing lanes, braking, and
+                accelerating as necessary. While it is not fully autonomous, it
+                represents a significant step forward in the development of
+                self-driving cars, and Tesla continues to improve its
+                capabilities.
+              </p>
+            </div>
           </div>
         </article>
-        <article>
-          <img src="images/Fully Electric img.svg" alt="Tesla Battery" />
-          <div class="featuresInfo">
-            <h3 class="infoHeading">Full Self Driving</h3>
-            <p class="infoText">
-              Tesla's self-driving technology, known as Autopilot, allows the
-              car to navigate on its own, changing lanes, braking, and
-              accelerating as necessary. While it is not fully autonomous, it
-              represents a significant step forward in the development of
-              self-driving cars, and Tesla continues to improve its
-              capabilities.
-            </p>
+        <article class="detailFeature left-[100vw]">
+          <div class="container">
+            <img src="images/Fully Electric img.svg" alt="Tesla Battery" />
+            <div class="featuresInfo">
+              <h3 class="infoHeading">Full Self Driving</h3>
+              <p class="infoText">
+                Tesla's self-driving technology, known as Autopilot, allows the
+                car to navigate on its own, changing lanes, braking, and
+                accelerating as necessary. While it is not fully autonomous, it
+                represents a significant step forward in the development of
+                self-driving cars, and Tesla continues to improve its
+                capabilities.
+              </p>
+            </div>
           </div>
         </article>
-        <article>
-          <img src="images/Fast Charging img.svg" alt="Tesla Charger" />
-          <div class="featuresInfo">
-            <h3 class="infoHeading">Full Self Driving</h3>
-            <p class="infoText">
-              Tesla's self-driving technology, known as Autopilot, allows the
-              car to navigate on its own, changing lanes, braking, and
-              accelerating as necessary. While it is not fully autonomous, it
-              represents a significant step forward in the development of
-              self-driving cars, and Tesla continues to improve its
-              capabilities.
-            </p>
+        <article class="detailFeature left-[200vw]">
+          <div class="container">
+            <img src="images/Fast Charging img.svg" alt="Tesla Charger" />
+            <div class="featuresInfo">
+              <h3 class="infoHeading">Full Self Driving</h3>
+              <p class="infoText">
+                Tesla's self-driving technology, known as Autopilot, allows the
+                car to navigate on its own, changing lanes, braking, and
+                accelerating as necessary. While it is not fully autonomous, it
+                represents a significant step forward in the development of
+                self-driving cars, and Tesla continues to improve its
+                capabilities.
+              </p>
+            </div>
           </div>
         </article>
       </section>
