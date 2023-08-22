@@ -10,11 +10,11 @@ export default {
         img: "15px 15px 0px 0px rgba(0, 0, 0, 0.50);",
       },
       backgroundImage: {
-        heroSection: "url(../images/Background.jpg)",
-        modelS: "url(../images/Model S.png)",
-        model3: "url(../images/Model 3.png)",
-        modelX: "url(../images/Model X.png)",
-        modelY: "url(../images/Model Y.png)",
+        heroSection: "url('/images/Background.jpg')",
+        modelS: "url('/images/Model S.png')",
+        model3: "url('/images/Model 3.png')",
+        modelX: "url('/images/Model X.png')",
+        modelY: "url('/images/Model Y.png')",
       },
       container: {
         center: true,
