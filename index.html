@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="images/fav.png" type="image/x-icon" />
+    <script src="./script.js" type="module"></script>
     <title>Tesla Landing Page Project | Syed Taqi Abbas</title>
   </head>
 
@@ -15,7 +16,7 @@
     >
       <div class="container">
         <nav
-          class="navbar | md:flex md:justify-between md:static absolute bg-primary-200 md:bg-transparent top-[3.75rem] -right-[100vw] h-[calc(100vh-3.75rem)] md:h-auto transition-all duration-500 ease-in-out"
+          class="navbar | md:flex md:justify-between md:static absolute bg-primary-200 md:bg-transparent top-[3.75rem] -right-[100vw] h-[calc(100vh_-_3.75rem)] md:h-auto transition-all duration-500 ease-in-out"
         >
           <ul class="nav leftNav">
             <a class="borderNavLink active" href="#home">
@@ -43,12 +44,11 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          onclick="menuActive()"
           viewBox="0 0 24 24"
-          class="hamburger | w-8 h-8 text-accent-100 md:hidden float-right"
+          onclick="menuActive()"
           stroke-width="1.5"
           stroke="currentColor"
-          class="w-6 h-6"
+          class="hamburger | w-8 h-8 text-accent-100 md:hidden float-right"
         >
           <path
             stroke-linecap="round"
@@ -303,9 +303,15 @@
           <h5 class="navHeading footerHeading mb-6">Navigation</h5>
           <nav>
             <ul class="flex flex-row md:flex-col">
-              <a href="#home"><li class="footerLi">Home</li></a>
-              <a href="#cars"><li class="footerLi">Cars</li></a>
-              <a href="#features"><li class="footerLi">Features</li></a>
+              <a href="#home">
+                <li class="footerLi">Home</li>
+              </a>
+              <a href="#cars">
+                <li class="footerLi">Cars</li>
+              </a>
+              <a href="#features">
+                <li class="footerLi">Features</li>
+              </a>
             </ul>
           </nav>
         </div>
@@ -318,11 +324,11 @@
                 placeholder="Last Name"
               />
             </div>
-            <input type="email" placeholder="Email" /><input
+            <input type="email" placeholder="Email" /><textarea
               class="h-[100px]"
-              type="text"
+              type="textarea"
               placeholder="Message"
-            />
+            ></textarea>
             <button
               class="submit bg-accent-300 rounded-lg m-[5px] h-[35px] font-primary text-neutral-100"
             >
@@ -339,6 +345,5 @@
         </h5>
       </div>
     </footer>
-    <script src="script.js" type="module"></script>
   </body>
 </html>

@@ -80,7 +80,8 @@ section {
 .footerHeading {
   @apply font-primary text-400 text-center mt-[16px] md:mt-0 md:text-500 font-semibold text-neutral-100;
 }
-.contact form input {
+.contact form input,
+textarea {
   @apply bg-accent-200 rounded-lg m-[5px] p-2 font-primary text-400 outline-none select-none text-neutral-100;
 }
 .contact .name input {
