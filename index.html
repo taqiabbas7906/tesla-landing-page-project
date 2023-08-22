@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="shortcut icon" href="images/fav.png" type="image/x-icon" />
     <title>Tesla Landing Page Project | Syed Taqi Abbas</title>
+    <style>
+      ::selection {
+        background-color: #3c3c3cb7;
+      }
+    </style>
   </head>
 
   <body class="w-[100vw]">
@@ -129,7 +134,7 @@
         id="cars"
       >
         <h2
-          class="text-700 md:text-1100 mt-3 font-accent uppercase font-semibold mb-10 text-neutral-100"
+          class="text-700 md:text-1100 m-10 font-accent uppercase font-semibold text-neutral-100"
         >
           Models
         </h2>
@@ -195,7 +200,7 @@
       <!-- Model Section End -->
       <!-- Features Section Start -->
       <section
-        class="flex w-[100vw] overflow-x-hidden md:overflow-x-visible h-[45rem] lg:h-full md:flex-col relative"
+        class="flex w-[100vw] overflow-x-hidden lg:overflow-x-visible h-[45rem] lg:h-full md:flex-col relative"
         id="features"
       >
         <article class="detailFeature z-30 first bg-primary-300">
@@ -351,75 +356,6 @@
       </div>
     </footer>
     <!-- Footer End -->
-    <script>
-      const hamburger = document.querySelector(".hamburger");
-      const navLinks = document.querySelectorAll(".navLink");
-      const navbar = document.querySelector("nav");
-
-      const sections = document.querySelectorAll("section");
-      const navLinksAnchor = document.querySelectorAll("header nav a");
-
-      const dots = document.querySelectorAll(".dot");
-      const features = document.querySelectorAll(".detailFeature");
-      // Menu Hamburger Logic
-      const menuActive = () => {
-        if (navbar.classList.contains("-right-[100vw]")) {
-          navbar.classList.remove("-right-[100vw]");
-          navbar.classList.add("right-0");
-          hamburger.innerHTML = ` <path
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    d="M6 18L18 6M6 6l12 12"
-  />`;
-        } else {
-          navbar.classList.remove("right-0");
-          navbar.classList.add("-right-[100vw]");
-          hamburger.innerHTML = `<path
-    stroke-linecap="round"
-    stroke-linejoin="round"
-    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-  />`;
-        }
-      };
-      navLinks.forEach((link) => {
-        link.addEventListener("click", menuActive);
-      });
-      hamburger.addEventListener("click", menuActive);
-
-      // Menu Auto React Logic
-
-      window.onscroll = () => {
-        sections.forEach((sec) => {
-          let top = window.scrollY;
-          let offSet = sec.offsetTop - 150;
-          let height = sec.offsetHeight;
-          let secId = sec.getAttribute("id");
-
-          if (top >= offSet && top < offSet + height) {
-            navLinksAnchor.forEach((anchors) => {
-              anchors.classList.remove("active");
-              document
-                .querySelector(`header nav a[href*= ${secId}]`)
-                .classList.add("active");
-            });
-          }
-        });
-      };
-
-      // Carosal Logic
-      dots.forEach((dot) => {
-        dot.addEventListener("click", () => {
-          dots.forEach((dot) => {
-            dot.style.backgroundColor = "#D9D9D9";
-          });
-          dot.style.backgroundColor = "#E51837";
-          let id = dot.getAttribute("id");
-          let move = id * 100;
-          features.forEach((feature) => {
-            feature.style.transform = `translateX(-${move}vw)`;
-          });
-        });
-      });
-    </script>
+    <script src="./script.js" type="module"></script>
   </body>
 </html>
