@@ -11,10 +11,10 @@ export default {
       },
       backgroundImage: {
         heroSection: "url(./images/Background.jpg)",
-        S: "url(./images/Model S.svg)",
-        3: "url(./images/Model 3.svg)",
-        X: "url(./images/Model X.svg)",
-        Y: "url(./images/Model Y.svg)",
+        S: "url(./images/Model S.png)",
+        3: "url(./images/Model 3.png)",
+        X: "url(./images/Model X.png)",
+        Y: "url(./images/Model Y.png)",
       },
       container: {
         center: true,
