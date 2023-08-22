@@ -44,7 +44,6 @@
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          onclick="menuActive()"
           stroke-width="1.5"
           stroke="currentColor"
           class="hamburger | w-8 h-8 text-accent-100 md:hidden float-right"
@@ -385,6 +384,7 @@
       navLinks.forEach((link) => {
         link.addEventListener("click", menuActive);
       });
+      hamburger.addEventListener("click", menuActive);
 
       // Menu Auto React Logic
 
