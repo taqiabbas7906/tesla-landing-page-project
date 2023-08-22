@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Tesla Landing Page Project</title>
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon" />
+    <title>Tesla Landing Page Project | Syed Taqi Abbas</title>
   </head>
 
-  <body class="w-[100vw] overflow-x-hidden">
+  <body class="w-[100vw]">
     <!-- Header Start -->
     <header
-      class="header | w-[100vw] flex bg-primary-200 h-[3.75rem] items-center fixed z-50"
+      class="header | w-[100vw] flex bg-primary-200 h-[3.75rem] items-center fixed top-0 z-50"
     >
       <div class="container">
         <nav
@@ -57,7 +58,7 @@
       </div>
     </header>
     <!-- Header End -->
-    <main class="overflow-x-hidden">
+    <main>
       <!-- Hero Section Start -->
       <section
         class="bg-heroSection h-[35rem] md:h-[100vh] bg-cover bg-no-repeat bg-center"
@@ -124,7 +125,7 @@
       </section>
       <!-- Hero Section End -->
       <section
-        class="bg-primary-300 justify-between md:h-[100vh] flex-col"
+        class="bg-primary-300 justify-evenly md:h-[100vh] flex-col"
         id="cars"
       >
         <h2
@@ -192,15 +193,19 @@
         </div>
       </section>
       <section
-        class="flex lg:flex-col relative sm:overflow-x-hidden"
+        class="flex w-[100vw] overflow-x-hidden md:overflow-x-visible h-[45rem] lg:h-full md:flex-col relative"
         id="features"
       >
-        <article class="detailFeature">
-          <div class="container">
-            <img src="images/FSD img.svg" alt="Fully Self Driving" />
+        <article class="detailFeature z-30 first bg-primary-300">
+          <div class="container lg:flex-row-reverse flex-col">
+            <img
+              src="images/FSD img.svg"
+              alt="Fully Self Driving"
+              class="left-0"
+            />
             <div class="featuresInfo">
-              <h3 class="infoHeading">Full Self Driving</h3>
-              <p class="infoText">
+              <h3 class="infoHeading text-neutral-100">Full Self Driving</h3>
+              <p class="infoText text-neutral-100">
                 Tesla's self-driving technology, known as Autopilot, allows the
                 car to navigate on its own, changing lanes, braking, and
                 accelerating as necessary. While it is not fully autonomous, it
@@ -211,40 +216,128 @@
             </div>
           </div>
         </article>
-        <article class="detailFeature left-[100vw]">
-          <div class="container">
-            <img src="images/Fully Electric img.svg" alt="Tesla Battery" />
+        <article
+          class="detailFeature z-20 left-[100vw] lg:bg-neutral-100 bg-primary-300"
+        >
+          <div class="container lg:flex-row flex-col">
+            <img
+              src="images/Fully Electric img.svg"
+              alt="Tesla Battery"
+              class="right-0"
+            />
             <div class="featuresInfo">
-              <h3 class="infoHeading">Full Self Driving</h3>
-              <p class="infoText">
-                Tesla's self-driving technology, known as Autopilot, allows the
-                car to navigate on its own, changing lanes, braking, and
-                accelerating as necessary. While it is not fully autonomous, it
-                represents a significant step forward in the development of
-                self-driving cars, and Tesla continues to improve its
-                capabilities.
+              <h3 class="infoHeading text-neutral-100 lg:text-primary-300">
+                Fully Electric
+              </h3>
+              <p class="infoText text-neutral-100 lg:text-primary-300">
+                Tesla's electric vehicles have several advantages over
+                traditional gas-powered cars. They produce zero emissions, have
+                lower operating costs, require less maintenance. Additionally,
+                Tesla's advanced technology and sleek designs make them a
+                popular choice for eco-conscious drivers.
               </p>
             </div>
           </div>
         </article>
-        <article class="detailFeature left-[200vw]">
-          <div class="container">
-            <img src="images/Fast Charging img.svg" alt="Tesla Charger" />
+        <article class="detailFeature z-10 left-[200vw] bg-primary-300">
+          <div class="container lg:flex-row-reverse flex-col">
+            <img
+              src="images/Fast Charging img.svg"
+              alt="Tesla Charger"
+              class="left-0"
+            />
             <div class="featuresInfo">
-              <h3 class="infoHeading">Full Self Driving</h3>
-              <p class="infoText">
-                Tesla's self-driving technology, known as Autopilot, allows the
-                car to navigate on its own, changing lanes, braking, and
-                accelerating as necessary. While it is not fully autonomous, it
-                represents a significant step forward in the development of
-                self-driving cars, and Tesla continues to improve its
-                capabilities.
+              <h3 class="infoHeading text-neutral-100">Super Charge</h3>
+              <p class="infoText text-neutral-100">
+                Tesla Superchargers are high-speed charging stations designed to
+                recharge Tesla electric vehicles quickly and conveniently. With
+                a network of over 25,000 Superchargers globally, Tesla owners
+                can travel long distances without worrying about running out of
+                battery power. The charging process typically takes around 30-45
+                minutes.
               </p>
             </div>
           </div>
         </article>
+        <div class="indicators absolute bottom-8 m-auto flex lg:hidden">
+          <div class="dot bg-accent-300" id="0"></div>
+          <div class="dot bg-[#D9D9D9]" id="1"></div>
+          <div class="dot bg-[#D9D9D9]" id="2"></div>
+        </div>
       </section>
+      <div class="container mt-10 mb-10 md:mt-24 md:mb-16">
+        <div
+          class="buyCta bg-primary-300 flex flex-col md:flex-row items-center justify-center md:justify-between shadow-img lg:h-[130px] h-[85px] p-4"
+        >
+          <h4
+            class="font-primary text-500 font-bold md:text-700 lg:text-900 text-neutral-100"
+          >
+            What are you waiting for?
+          </h4>
+          <a href="#" class="group block self-center"
+            ><button class="btn | mt-2 md:mt-5">Buy Now</button></a
+          >
+        </div>
+      </div>
     </main>
+    <footer class="bg-primary-300" id="footer">
+      <div
+        class="container relative flex flex-col pb-12 md:flex-row items-center md:items-start pt-12"
+      >
+        <div class="footerInfo flex flex-col items-center md:items-start">
+          <img
+            src="images/footer-logo.svg"
+            alt="tesla"
+            class="footerLogo md:w-[260px]"
+          />
+          <p
+            class="footerPara text-neutral-100 font-primary md:w-[70%] text-400 mt-8"
+          >
+            Tesla's self-driving technology, known as Autopilot, allows the car
+            to navigate on its own, changing lanes, braking, and accelerating as
+            necessary.
+          </p>
+        </div>
+        <div class="navigation">
+          <h5 class="navHeading footerHeading mb-6">Navigation</h5>
+          <nav>
+            <ul class="flex flex-row md:flex-col">
+              <a href="#home"><li class="footerLi">Home</li></a>
+              <a href="#cars"><li class="footerLi">Cars</li></a>
+              <a href="#features"><li class="footerLi">Features</li></a>
+            </ul>
+          </nav>
+        </div>
+        <div class="md:ml-24 contact text-center">
+          <h5 class="contactHeading footerHeading mb-5">Contact</h5>
+          <form class="flex flex-col" action="submit">
+            <div class="name flex">
+              <input type="text" placeholder="First Name" /><input
+                type="text"
+                placeholder="Last Name"
+              />
+            </div>
+            <input type="email" placeholder="Email" /><input
+              class="h-[100px]"
+              type="text"
+              placeholder="Message"
+            />
+            <button
+              class="submit bg-accent-300 rounded-lg m-[5px] h-[35px] font-primary text-neutral-100"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <h5 class="absolute mx-auto bottom-3 md:left-0">
+          <a
+            class="text-neutral-100 font-primary"
+            href="https://www.taqiabbas.me"
+            >Syed Taqi Abbas © 2023</a
+          >
+        </h5>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

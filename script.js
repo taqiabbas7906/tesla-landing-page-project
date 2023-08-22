@@ -5,6 +5,8 @@ const navbar = document.querySelector("nav");
 const sections = document.querySelectorAll("section");
 const navLinksAnchor = document.querySelectorAll("header nav a");
 
+const dots = document.querySelectorAll(".dot");
+const features = document.querySelectorAll(".detailFeature");
 // Menu Hamburger Logic
 const menuActive = () => {
   if (navbar.classList.contains("-right-[100vw]")) {
@@ -48,3 +50,18 @@ window.onscroll = () => {
     }
   });
 };
+
+// Carosal Logic
+dots.forEach((dot) => {
+  dot.addEventListener("click", () => {
+    dots.forEach((dot) => {
+      dot.style.backgroundColor = "#D9D9D9";
+    });
+    dot.style.backgroundColor = "#E51837";
+    let id = dot.getAttribute("id");
+    let move = id * 100;
+    features.forEach((feature) => {
+      feature.style.transform = `translateX(-${move}vw)`;
+    });
+  });
+});

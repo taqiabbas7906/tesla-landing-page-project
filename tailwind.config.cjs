@@ -3,6 +3,12 @@ export default {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        md: "720px",
+      },
+      boxShadow: {
+        img: "15px 15px 0px 0px rgba(0, 0, 0, 0.50);",
+      },
       backgroundImage: {
         heroSection: "url(./images/Background.jpg)",
         S: "url(./images/Model S.svg)",
@@ -14,7 +20,7 @@ export default {
         center: true,
         screens: {
           sm: "90vw",
-          md: "820px",
+          md: "1020px",
           lg: "1080px",
           xl: "1180px",
         },

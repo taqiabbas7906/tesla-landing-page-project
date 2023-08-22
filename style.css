@@ -54,14 +54,49 @@ section {
   @apply group-hover:opacity-0 transition-all duration-500;
 }
 .infoHeading {
-  @apply md:text-900 text-500 font-primary font-bold text-neutral-100;
+  @apply md:text-900 text-600 font-primary font-bold my-5;
 }
 .infoText {
-  @apply md:text-500 text-400 font-primary;
+  @apply md:text-500 text-400 font-primary  font-normal leading-8;
 }
 .detailFeature {
-  @apply absolute lg:static top-0 lg:h-[470px];
+  @apply absolute w-[100vw] lg:static top-0 lg:h-[470px] overflow-visible pt-5 transition-transform duration-500;
 }
 .detailFeature .container {
-  @apply flex flex-col lg:flex-row w-[100%] justify-between;
+  @apply flex w-[100%] items-center relative h-[100%];
+}
+.detailFeature .container img {
+  @apply lg:w-[500px] shadow-img lg:absolute top-16 w-[310px] md:w-[400px];
+}
+.featuresInfo {
+  @apply lg:w-[50%] flex flex-col items-center justify-center lg:items-start;
+}
+.dot {
+  @apply w-[15px] h-[15px] m-1  rounded-full border-[#D9D9D9] border-[1px];
+}
+.footerLi {
+  @apply text-neutral-100 font-primary my-[10px] mx-[16px] md:mx-0;
+}
+.footerHeading {
+  @apply font-primary text-400 text-center mt-[16px] md:mt-0 md:text-500 font-semibold text-neutral-100;
+}
+.contact form input {
+  @apply bg-accent-200 rounded-lg m-[5px] p-2 font-primary text-400 outline-none select-none text-neutral-100;
+}
+.contact .name input {
+  @apply w-[50%];
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  /* -webkit-box-shadow: 0 0 0px 1000px #1b1b6c inset; */
+  background-color: #1b1b6c;
+  transition: background-color 5000s ease-in-out 0s;
 }
